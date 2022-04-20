@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h4>Products</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <table class="table table-hover" id="tblProduct">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Mã CK</th>
+                                <th>Mua giá 3</th>
+                                <th>Mua kl 3</th>
+                                <th>Mua giá 2</th>
+                                <th>Mua kl 2</th>
+                                <th>Mua giá 1</th>
+                                <th>Mua kl 1</th>
+                                <th>Giá khớp</th>
+                                <th>Kl khớp</th>
+                                <th>Bán giá 1</th>
+                                <th>Bán kl 1</th>
+                                <th>Bán giá 2</th>
+                                <th>Bán kl 2</th>
+                                <th>Bán giá 3</th>
+                                <th>Bán kl 3</th>
+                                <th>Tổng kl</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-md-5">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h4>Proudcts</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="canvasProudcts" width="500" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="~/js/dashboard.js"></script>
+}
